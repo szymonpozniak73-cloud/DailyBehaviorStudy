@@ -32,10 +32,21 @@
       text-decoration: none;
     }
   </style>
+  <script>
+    function startSurvey() {
+      const urls = [
+        "https://forms.gle/vjsKPoq3xfGeQyN47",
+        "https://forms.gle/shdugXHciBpjFAs76",
+        "https://forms.gle/bH8FjkEp7yru2pma6"
+      ];
+      const chosen = urls[Math.floor(Math.random() * urls.length)];
+      window.location.href = chosen;
+    }
+  </script>
 </head>
 <body>
   <div class="card">
-    <h1>Badanie online</h1>
+    <h1>Badanie funkcjonowania psychologicznego w sytuacjach codziennych</h1>
     <p>Kliknij przycisk START, aby rozpocząć badanie.</p>
     <a href="TUTAJ_WKLEJ_LINK_ACC0LLATEMONSTER">
       <button>START</button>
